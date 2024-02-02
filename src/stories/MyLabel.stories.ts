@@ -37,7 +37,7 @@ export const AllCaps: Story = {
 export const Secondary: Story = {
     args: {
         label: 'Secondary label',
-        color: 'text-primary',
+        color: 'text-secondary',
     }
 }
 export const CustomColor: Story = {
