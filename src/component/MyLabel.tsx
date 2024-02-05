@@ -23,13 +23,26 @@ interface Props {
      *  Font Color
      */
     fontColor?: string;
-    }
+
+    /**
+     * 
+     * background Color
+     * 
+     */
+
+    backgroundColor?: string;
+}
+    
+
+
+
     export const MyLabel = ({
     label,
     size = "normal",
     allCaps = false,
     color,
     fontColor,
+    backgroundColor,
     }: Props) => {
     return (
         <span 
@@ -38,7 +51,7 @@ interface Props {
                 ${color}
                 label
             `}
-            style={{ color: fontColor }}>
+            style={{ color: fontColor, backgroundColor }}>
         {allCaps ? label.toUpperCase() : label}
         </span>
     );
