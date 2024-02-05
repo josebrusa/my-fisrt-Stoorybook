@@ -1,7 +1,7 @@
 {
   "name": "jlb-my-storybook-component",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.1-rc-1",
   "type": "module",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -17,7 +17,7 @@
   "license": "MIT",
   "homepage": "https://josebrusa.github.io/my-fisrt-Stoorybook/?path=/docs/configure-your-project--docs",
   "repository": {
-    "url": "https://github.com/josebrusa/my-fisrt-Stoorybook.git",
+    "url": "https://github.com/josebrusa/my-fisrt-Stoorybook/tree/package-npm",
     "type": "git"
   },
   "files": [
@@ -32,6 +32,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "dev": "pnpm run storybook",
     "build": "pnpm run clean && tsc && pnpm run copyfiles",
@@ -41,7 +45,8 @@
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_ffe06185c8ed96c",
     "clean": "rimraf dist/",
-    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
+    "push:npm": "np"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.12",
@@ -63,6 +68,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.6.15",
+    "np": "^9.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.5",
