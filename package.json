@@ -17,7 +17,7 @@
   "license": "MIT",
   "homepage": "https://josebrusa.github.io/my-fisrt-Stoorybook/?path=/docs/configure-your-project--docs",
   "repository": {
-    "url": "https://github.com/josebrusa/my-fisrt-Stoorybook/tree/package-npm",
+    "url": "https://github.com/josebrusa/my-fisrt-Stoorybook.git",
     "type": "git"
   },
   "files": [
